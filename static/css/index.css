@@ -1,0 +1,282 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-subtitle {
+  font-family: "Noto Sans", Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+
+.interpolation-panel {
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.interpolation-panel .interpolation-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.interpolation-video-column {
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+#interpolation-image-wrapper {
+  width: 100%;
+}
+#interpolation-image-wrapper img {
+  border-radius: 5px;
+}
+
+
+
+.answer {
+  display: none; /* 默认隐藏答案 */
+}
+
+.question-image {
+  object-fit: contain;  /* 或者使用 'cover'，根据需求选择 */
+  width: 100%; /* 保证图片宽度占满容器 */
+  height: 100%; /* 保证图片高度占满容器 */
+}
+
+.container {
+  max-width: 1200px; /* 调整宽度，可以根据实际需要来修改 */
+  width: 100%;       /* 设置容器的宽度为100% */
+  margin: 0 auto;    /* 居中对齐 */
+  padding: 20px;     /* 给容器添加一些内边距 */
+}
+
+
+body {
+  font-size: 18px;
+  line-height: 1.8;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-divider {
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.section-gradient {
+  background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.section-custom-divider {
+  position: relative;
+  padding: 20px 0;
+}
+
+.section-custom-divider::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #333;
+}
+
+
+/* 样式表 (style.css) */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;  /* 控制页面最大宽度 */
+  margin: 0 auto;     /* 居中显示 */
+  padding: 20px;      /* 给容器一些内边距 */
+}
+
+
+
+/* 设置段落、标题等文本的对齐方式 */
+.content p {
+  margin: 0 ;
+  padding: 0;
+  text-align: justify; /* 或者根据需求使用 left、center */
+}
+
+/* 内容样式 */
+.content {
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding-top: 0; /* 去除section顶部的默认内边距 */
+  margin-top: 0;  /* 去除section顶部的默认外边距 */
+}
+
+.container {
+  padding-top: 10px; /* 调整container顶部的内边距 */
+  margin-top: 0;     /* 去除container顶部的外边距 */
+}
+
+.leaderboard-description {
+  text-align: center;   /* 水平居中 */
+  font-size: 16px;       /* 设置字体大小 */
+  margin-top: 10px;      /* 上边距 */
+}
+
+
+
+#BibTeX {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

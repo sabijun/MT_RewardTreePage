@@ -1,18 +1,307 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>First Page</title>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Awesome LLM-as-a-Judge</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/judge_logo.png">
+
+  <link rel="stylesheet" href="./static/css/index_mmmu.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <script src="./static/js/index_emma.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      bulmaCarousel.attach('#pdf-carousel', {
+        slidesToScroll: 1,  
+        slidesToShow: 1, 
+        loop: true,         
+        autoplay: true,     
+        autoplaySpeed: 5000
+      });
+    });
+  </script>
 </head>
 <body>
-    <h2>This is my first page</h2>
-    <script src="main.js"></script>
+
+
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+  
+            <!-- New Image -->
+            <img src="./static/images/title-MT-RewardTree.png" alt="judge Logo" style="max-width: 60%; height: auto; margin-bottom: 1rem;">
+            <!-- <h1 class="title is-1 publication-title">An Enhanced MultiModal ReAsoning Benchmark</h1>-->
+            <!-- <h2 class="subtitle is-3 publication-subtitle">An Enhanced MultiModal ReAsoning Benchmark</h2> -->
+            <!-- <h2 class="subtitle is-3 publication-subtitle">Can MLLMs Reason/Think in Multimodality?</h2> -->
+            <!-- <h2 class="title is-3">A Survey provides a systematic review of research on LLM-as-a-Judge, offering a comprehensive overview of the field while exploring strategies for building reliable LLM-as-a-Judge systems</h2> -->
+            <!-- <h2 class="subtitle is-3 publication-subtitle">A Survey provides a systematic review of research on LLM-as-a-Judge, offering a comprehensive overview of the field while exploring strategies for building reliable LLM-as-a-Judge systems</h2> -->
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="mailto:kuvvius@gmail.com">Jiawei Gu</a><sup>1</sup>*,
+              </span>              
+              <span class="author-block">
+                <a href="https://scholar.google.com.hk/citations?user=10GD-YMAAAAJ&hl=zh-CN">Xuhui Jiang</a><sup>1</sup>*,</span>
+              <span class="author-block">
+                <a href="mailto:shizhichao22s@ict.ac.cn">Zhichao Shi</a><sup>1,2</sup>*,</span>
+              <span class="author-block">
+                <a href="https://tan-hexiang.github.io/">Hexiang Tan</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/xuehao-zhai-501085254/">Xuehao Zhai</a><sup>3</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.de/citations?user=sIts5VgAAAAJ&hl=zh-CN">Chengjin Xu</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com.hk/citations?user=34xQzZ4AAAAJ&hl=zh-CN&oi=sra">Wei Li</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="#">Yinghan Shen</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=-BapYIIAAAAJ&hl=en">Shengjie Ma</a><sup>1,4</sup>,</span>
+              <span class="author-block">
+                <a href="#">Honghao Liu</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="#">Kun Zhang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=kG3sQ2UAAAAJ&hl=zh-CN">Saizhuo Wang</a><sup>1,6</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=v1KzwYEAAAAJ&hl=en">Yuanzhuo Wang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=u9aw5o8AAAAJ&hl=en">Wen Gao</a><sup>5</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=OzMYwDIAAAAJ&hl=zh-CN">Lionel Ni</a><sup>6,7</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.idea.edu.cn/person/guojian/">Jian Guo</a><sup>1</sup>†</span>
+            </div>
+  
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>IDEA Research</span>,
+              <span class="author-block"><sup>2</sup>Chinese Academy of Sciences</span>,
+              <span class="author-block"><sup>3</sup>Imperial College London</span>,
+              <span class="author-block"><sup>4</sup>Renmin University of China</span>,
+              <span class="author-block"><sup>5</sup>Peking University</span>,
+              <span class="author-block"><sup>6</sup>HKUST</span>,
+              <span class="author-block"><sup>7</sup>HKUST(GZ)</span>
+            </div>
+  
+            <div class="is-size-6 has-text-centered">
+              <p>*Equal contribution</p>
+              <p>†Corresponding author</p>
+            </div>
+  
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2411.15594"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2411.15594"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/IDEA-FinAI/LLM-as-a-Judge"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Paper List</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#meta-evaluation"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-chart-bar"></i>
+                    </span>
+                    <span>Meta-eval</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://event.baai.ac.cn/activities/878"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Talk</span>
+                  </a>
+                </span>
+                <!-- <span class="link-block">
+                  <a href="https://x.com/will_wang_whc/status/1877550459290071318" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon has-text-white">🌐</span>
+                    <span>Twitter</span>
+                  </a>
+                </span> -->
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <!-- 添加图片 -->
+      <img src="./static/images/how_to_judge.png" alt="judge pipeline" style="max-width: 100%; height: auto;" id="pipeline_figure">
+      <!-- 图片说明文字 -->
+      <h2 class="subtitle has-text-centered">
+      LLM-as-a-Judge Evaluation Pipeline.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">🔔News</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>🔥 [2025-01-28]</b>: We added analysis on LLM-as-a-Judge and o1-like Reasoning Enhancement, as well as <b><a href="#meta-evaluation">meta-evaluation</a></b> results on <b>o1-mini</b>, <b>Gemini-2.0-Flash-Thinking-1219</b>, and <b>DeepSeek-R1</b>! 
+          </p>
+          <p>🌟 <b>[2025-01-16]</b>: We shared and discussed the <b>methodologies</b>, <b>applications (Finance, RAG, and Synthetic Data)</b>, and future research directions of LLM-as-a-Judge at BAAI Talk! 🤗  
+            <br>
+            <a href="https://event.baai.ac.cn/activities/878">[Replay]</a>  
+            <a href="https://ticket-assets.baai.ac.cn/uploads/%E6%96%B9%E6%B3%95%E8%AE%BA%E3%80%81%E5%BA%94%E7%94%A8%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%E6%8E%A2%E8%AE%A8.pdf">[Methodology]</a>  
+            <a href="https://ticket-assets.baai.ac.cn/uploads/LLM-as-a-Judge-%E5%BE%90%E9%93%96%E6%99%8B.pdf">[RAG & Synthetic Data]</a>
+            </p>            
+          <p>
+            <b>🚀 [2024-11-23]</b>: WWe released <a href="https://arxiv.org/pdf/2411.15594">A Survey on LLM-as-a-Judge</a>, exploring LLMs as reliable, scalable evaluators and outlining key challenges and future directions!
+          </p>
+      </div>
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Accurate and consistent evaluation is crucial for decision-making across numerous fields, yet it remains a challenging task due to inherent subjectivity, variability, and scale. 
+Large Language Models (LLMs) have achieved remarkable success across diverse domains, leading to the emergence of "LLM-as-a-Judge," where LLMs are employed as evaluators for complex tasks. With their ability to process diverse data types and provide scalable and flexible assessments, LLMs present a <b>compelling alternative to traditional expert-driven evaluations. </b>
+          </p>
+          <p>
+            However, ensuring the reliability of LLM-as-a-Judge systems remains a significant challenge that requires careful design and standardization.
+            This paper provides a comprehensive survey on LLM-as-a-Judge, offering a 
+            <strong>formal definition</strong> and a <strong>detailed classification</strong>, while focusing on addressing the <b>core question</b>: 
+            <u>How to build reliable LLM-as-a-Judge systems?</u> We explore strategies to enhance reliability, including improving consistency, mitigating biases, and adapting to diverse assessment scenarios. Additionally, we propose methodologies for evaluating the reliability of LLM-as-a-Judge systems, supported by a novel <a href="#meta-evaluation">benchmark</a> designed for this purpose. 
+            To advance the development and real-world deployment of LLM-as-a-Judge systems, we also discussed practical applications, challenges, and future directions. This survey serves as a foundational reference for researchers and practitioners in this rapidly evolving field.
+        </p>  
+        </div>
+        <img src="./static/images/paper_structure.png" alt="Motivation" style="width: 100%; max-width: 1000px; margin-top: 20px;"/>
+      </div>
+  </div>
+</section>
+
+
+<div id="meta-evaluation" class="container" style="margin-bottom: 2vh;">
+  <!-- Benchmark. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Meta-evaluation Pipeline and Results</h2>
+      <div class="content has-text-justified">
+        <p>
+          We also conducted a meta-evaluation of improvement strategies for LLM-as-a-Judge systems using benchmarks such as LLMEval<sup>2</sup> and EVALBIASBENCH to assess their effectiveness in optimizing evaluation performance and mitigating biases.
+          Notably, we analyzed the performance of <b>reasoning-enhanced LLMs, demonstrating their advancements over baseline models but highlighting their inconsistent improvements in alignment-related tasks.</b>
+        </p>
+      </div>
+      <img src="./static/images/meta_eval_pipeline.png" alt="eval_pipeline" style="width: 80%; max-width: 1000px; margin-top: 20px;"/>
+      <img src="./static/images/meta_eval_results.png" alt="eval_benchmark" style="width: 100%; max-width: 1000px; margin-top: 20px;"/>
+    </div>
+  </div>
+</div>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @article{gu2024survey,
+      title={A Survey on LLM-as-a-Judge},
+      author={Gu, Jiawei and Jiang, Xuhui and Shi, Zhichao and Tan, Hexiang and Zhai, Xuehao and Xu, Chengjin and Li, Wei and Shen, Yinghan and Ma, Shengjie and Liu, Honghao and others},
+      journal={arXiv preprint arXiv:2411.15594},
+      year={2024}
+    }
+  </code></pre>
+  </div>
+</section>
+
+<div id="visitor-map" style="width: 300px; height: 300px; overflow: hidden; margin: 0 auto;">
+  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=MOsP4RFIdJhM0oNSVqVBNoqPWmfSQVwCYpvrKG-uom4&cl=ffffff&w=a"></script>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/pdf/2411.15594">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/IDEA-FinAI/LLM-as-a-Judge" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
-alert('xxx')
-h2 {
-    color: red;
-}
