@@ -87,7 +87,8 @@
             </div>
   
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Zhejiang University - University of Illinois Urbana-Champaign Institute</span>
+              <span class="author-block"><sup>1</sup>Zhejiang University - University of Illinois Urbana-Champaign Institute,</span>
+
               <span class="author-block"><sup>2</sup>Zhejiang University</span>
             </div>
   
@@ -159,7 +160,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body has-text-centered">
       <!-- 添加图片 -->
-      <img src="./static/images/how_to_judge.png" alt="judge pipeline" style="max-width: 100%; height: auto;" id="pipeline_figure">
+      <img src="./static/images/MT-RewardTree_structure.png" alt="judge pipeline" style="max-width: 100%; height: auto;" id="pipeline_figure">
       <!-- 图片说明文字 -->
       <h2 class="subtitle has-text-centered">
       LLM-as-a-Judge Evaluation Pipeline.
@@ -194,18 +195,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Process reward models (PRMs) have shown success in complex reasoning tasks for large language models (LLMs). However, their application to machine translation (MT) remains underexplored due to the lack of systematic methodologies and evaluation benchmarks. To address this gap, we introduce MT-RewardTree, a comprehensive framework for constructing, evaluating, and deploying process reward models in MT. We propose a novel method for automatically generating high-quality token-level preference pairs using approximate Monte Carlo Tree Search (MCTS), mitigating the prohibitive cost of human annotation. Our framework establishes the first MT-specific reward model benchmark and provides a systematic comparison of different reward modeling architectures, revealing that token-level supervision effectively captures fine-grained preferences. Experimental results demonstrate that our MT-PRM-Qwen-2.5-3B achieves state-of-the-art performance in both token-level and sequence-level evaluation given the same input prefix. Furthermore, we showcase practical applications where PRMs enable test-time alignment for LLMs without additional training and significantly improve performance in hypothesis ensembling. Our work provides valuable insights into the role of reward models in MT research. Our code and data will be publicly available.
+            Process reward models (PRMs) have shown success in complex reasoning tasks for large language models (LLMs). 
+            However, their application to machine translation (MT) remains underexplored due to the lack of systematic methodologies and evaluation benchmarks. To address this gap, we introduce MT-RewardTree, a comprehensive framework for constructing, evaluating, and deploying process reward models in MT. We propose a novel method for automatically generating high-quality token-level preference pairs using approximate Monte Carlo Tree Search (MCTS), mitigating the prohibitive cost of human annotation. Our framework establishes the first MT-specific reward model benchmark and provides a systematic comparison of different reward modeling architectures, revealing that token-level supervision effectively captures fine-grained preferences. Experimental results demonstrate that our MT-PRM-Qwen-2.5-3B achieves state-of-the-art performance in both token-level and sequence-level evaluation given the same input prefix. Furthermore, we showcase practical applications where PRMs enable test-time alignment for LLMs without additional training and significantly improve performance in hypothesis ensembling. Our work provides valuable insights into the role of reward models in MT research. Our code and data will be publicly available.
           </p>  
         </div>
-        <img src="./static/images/paper_structure.png" alt="Motivation" style="width: 100%; max-width: 1000px; margin-top: 20px;"/>
+        <!-- <img src="./static/images/paper_structure.png" alt="Motivation" style="width: 100%; max-width: 1000px; margin-top: 20px;"/> -->
       </div>
   </div>
 </section>
 
 
-<div id="meta-evaluation" class="container" style="margin-bottom: 2vh;">
+<!-- <div id="meta-evaluation" class="container" style="margin-bottom: 2vh;"> -->
   <!-- Benchmark. -->
-  <div class="columns is-centered has-text-centered">
+  <!-- <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
       <h2 class="title is-3">Meta-evaluation Pipeline and Results</h2>
       <div class="content has-text-justified">
@@ -218,9 +220,9 @@
       <img src="./static/images/meta_eval_results.png" alt="eval_benchmark" style="width: 100%; max-width: 1000px; margin-top: 20px;"/>
     </div>
   </div>
-</div>
+</div> -->
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>
@@ -232,7 +234,7 @@
     }
   </code></pre>
   </div>
-</section>
+</section> -->
 
 <div id="visitor-map" style="width: 300px; height: 300px; overflow: hidden; margin: 0 auto;">
   <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=MOsP4RFIdJhM0oNSVqVBNoqPWmfSQVwCYpvrKG-uom4&cl=ffffff&w=a"></script>
