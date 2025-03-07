@@ -176,7 +176,7 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">🔔News</h2>
+        <!-- <h2 class="title is-3">🔔News</h2>
         <div class="content has-text-justified">
           <p>
             <b>🔥 [2025-01-28]</b>: We added analysis on LLM-as-a-Judge and o1-like Reasoning Enhancement, as well as <b><a href="#meta-evaluation">meta-evaluation</a></b> results on <b>o1-mini</b>, <b>Gemini-2.0-Flash-Thinking-1219</b>, and <b>DeepSeek-R1</b>! 
@@ -191,13 +191,16 @@
           <p>
             <b>🚀 [2024-11-23]</b>: WWe released <a href="https://arxiv.org/pdf/2411.15594">A Survey on LLM-as-a-Judge</a>, exploring LLMs as reliable, scalable evaluators and outlining key challenges and future directions!
           </p>
-      </div>
+      </div> -->
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             Process reward models (PRMs) have shown success in complex reasoning tasks for large language models (LLMs). 
-            However, their application to machine translation (MT) remains underexplored due to the lack of systematic methodologies and evaluation benchmarks. To address this gap, we introduce MT-RewardTree, a comprehensive framework for constructing, evaluating, and deploying process reward models in MT. We propose a novel method for automatically generating high-quality token-level preference pairs using approximate Monte Carlo Tree Search (MCTS), mitigating the prohibitive cost of human annotation. Our framework establishes the first MT-specific reward model benchmark and provides a systematic comparison of different reward modeling architectures, revealing that token-level supervision effectively captures fine-grained preferences. Experimental results demonstrate that our MT-PRM-Qwen-2.5-3B achieves state-of-the-art performance in both token-level and sequence-level evaluation given the same input prefix. Furthermore, we showcase practical applications where PRMs enable test-time alignment for LLMs without additional training and significantly improve performance in hypothesis ensembling. Our work provides valuable insights into the role of reward models in MT research. Our code and data will be publicly available.
+            However, their application to machine translation (MT) remains underexplored due to the lack of systematic methodologies and evaluation benchmarks. To address this gap, we introduce MT-RewardTree, a comprehensive framework for constructing, evaluating, and deploying process reward models in MT. We propose a novel method for automatically generating high-quality token-level preference pairs using approximate Monte Carlo Tree Search (MCTS), mitigating the prohibitive cost of human annotation. Our framework establishes the first MT-specific reward model benchmark and provides a systematic comparison of different reward modeling architectures, revealing that token-level supervision effectively captures fine-grained preferences. 
           </p>  
+          <p>
+            Experimental results demonstrate that our MT-PRM-Qwen-2.5-3B achieves state-of-the-art performance in both token-level and sequence-level evaluation given the same input prefix. Furthermore, we showcase practical applications where PRMs enable test-time alignment for LLMs without additional training and significantly improve performance in hypothesis ensembling. Our work provides valuable insights into the role of reward models in MT research. Our code and data will be publicly available.
+          </p>
           <!-- <p>
             Accurate and consistent evaluation is crucial for decision-making across numerous fields, yet it remains a challenging task due to inherent subjectivity, variability, and scale. 
 Large Language Models (LLMs) have achieved remarkable success across diverse domains, leading to the emergence of "LLM-as-a-Judge," where LLMs are employed as evaluators for complex tasks. With their ability to process diverse data types and provide scalable and flexible assessments, LLMs present a <b>compelling alternative to traditional expert-driven evaluations. </b>
