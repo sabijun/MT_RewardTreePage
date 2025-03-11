@@ -218,6 +218,34 @@ Large Language Models (LLMs) have achieved remarkable success across diverse dom
   </div>
 </section>
 
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset Construction</h2>
+        <div class="content has-text-justified">
+          <p>
+            We propose a token-centric approach that quantifies token quality based on its potential to contribute to higher-quality translations. This method aligns with Monte Carlo based PRMs construction techniques in mathematics, where step-wise quality is determined by its incremental contribution to deriving correct answers.
+          </p>  
+          <p>
+            <b>Selection</b>:The first phase involves selecting a portion of the existing tree that is most promising for further expansion. Starting from the root node, a standard approach would traverse the tree down to a leaf using the PUCT algorithm, and we select the existing prompt and previously generated tokens as the prefix y<sub>&lt;t</sub>.
+          </p>
+          <p>
+            <b>Expansion</b>:If the selected leaf node is not an EOS token, the node is expanded by generating k candidate children. In our paper, we select the top-2 candidate tokens that have the highest logits. These top-2 tokens, sharing the same prefix y<sub>&lt;t</sub>, form the basis for our token-level preference pair.
+          </p>
+          <p>
+            <b>Simulation</b>:From each expanded node a, we generate n complete translation rollouts until an EOS token is reached. We than evaluate the quality of the full translation sequence. These scores are averaged and further assigned as the value of node a.
+          </p>
+          <p>
+            <b>Back-propagation</b>:We compare the values of node a<sub>t1</sub> and a<sub>t2</sub> to determine which expanded token is superior. Finally, we retain the node with the higher value. This node, along with its corresponding prefix y<sub>&lt;t</sub>, is then used as the starting point in the next simulation cycle, beginning again at Step 1.
+          </p>
+        </div>
+        <img src="./static/images/MCTS_process.png" alt="Motivation" style="width: 100%; max-width: 1000px; margin-top: 20px;"/>
+      </div>
+  </div>
+</section>
+
 
 <div id="meta-evaluation" class="container" style="margin-bottom: 2vh;">
   <!-- Benchmark. -->
@@ -232,7 +260,6 @@ Large Language Models (LLMs) have achieved remarkable success across diverse dom
       <!-- <img src="./static/images/meta_eval_pipeline.png" alt="eval_pipeline" style="width: 80%; max-width: 1000px; margin-top: 20px;"/> -->
       <img src="./static/images/MT-RewardTree_results.png" alt="eval_results" style="width: 100%; max-width: 1000px; margin-top: 20px;"/>
       <img src="./static/images/Test-time Alignment.png" alt="eval_results" style="width: 100%; max-width: 1000px; margin-top: 20px;"/>
-      <img src="./static/images/MCTS_process.png" alt="eval_results" style="width: 100%; max-width: 1000px; margin-top: 20px;"/>
       <img src="./static/images/Ensembeling.png" alt="eval_results" style="width: 100%; max-width: 1000px; margin-top: 20px;"/>
     </div>
   </div>
