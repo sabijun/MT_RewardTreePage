@@ -278,7 +278,7 @@ Large Language Models (LLMs) have achieved remarkable success across diverse dom
             In the context of MT, given the prior context <i>s<sub>&lt;t</sub></i> and timestamp <i>t</i>, we define the reward-guided scoring function for a candidate token <i>a</i> as:
           </p>
           <div style="text-align: center;">
-            <img src="./static/images/Test-time formula.png" alt="Motivation" style="width: 50%; margin: auto;"/>
+            <img src="./static/images/Test-time formula.png" alt="Motivation" style="width: 40%; margin: auto;"/>
           </div>
           <p>
             Compared to standard decoding strategies, this approach offers a more refined scoring function, as it encourages the generated text to: 1&rpar; Maintain semantic coherence and relevance with the prior context, and 2&rpar; Align more closely with reward-based criteria and human preferences. Test-time alignment also substantially reduces the need for the extensive resources typically required for LM alignment training.<br>
@@ -291,7 +291,9 @@ Large Language Models (LLMs) have achieved remarkable success across diverse dom
           <p>
             Ensembling is widely recognized for its ability to combine multiple complementary models to improve performance in machine learning. In this work, we investigate two complementary ensembling approaches for MT: ranking-based selection and Minimum Bayes Risk decoding, and correspond with the formula below:
           </p>
-          <img src="./static/images/Ensembling formula.png" alt="eval_results" style="width: 100%; max-width: 1000px; margin: 0 auto;"/>
+          <div style="text-align: center;">
+            <img src="./static/images/Ensembling formula.png" alt="eval_results" style="width: 70%; max-width: 1000px; margin: 0 auto;"/>
+          </div>
           <p>
             Where <i>f</i> represents either Strong LLM as a judge (e.g., Gemini-2.0-Flash6) or Our PRM, converted to sequence-level scoring through weighted DPO rewards, and the <i>u(·)</i> can be instantiated using traditional metrics such as BLEU, BERTScore and the reference based metric COMET.<br>
             We evaluate on 500 cases sampled from the WMT 2023 dataset, using the TowerInstruct-7B-v0.2 model with nucleus sampling to generate 8 candidate translations for each case. As shown below, our MT-PRM-LLaMA-3.2-3B outperforms MBR decoding, based on BLEU and BERTScore, by 0.93% and 0.27%, respectively. It even surpasses the commercial LLM Gemini-2.0-Flash by 0.51%.
